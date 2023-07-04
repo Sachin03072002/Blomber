@@ -52,7 +52,7 @@ export default function ChatLayout() {
             <Admin
               adminId={adminData.friendId}
               adminName={adminData.friendName}
-              adminPhoto={adminData.friendPhoto}
+              adminPhoto="https://pluspng.com/img-png/user-png-icon-young-user-icon-2400.png"
             />
           )}
 
@@ -67,7 +67,7 @@ export default function ChatLayout() {
                   key={i}
                   friendId={item.friendId}
                   friendName={item.friendName}
-                  friendPhoto={item.friendPhoto}
+                  friendPhoto="https://pluspng.com/img-png/user-png-icon-young-user-icon-2400.png"
                   friendLastMsg="Hello Buddy"
                   backColor={item.backColor}
                   friendOnline={item.friendOnline}

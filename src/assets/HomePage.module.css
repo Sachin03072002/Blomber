@@ -11,6 +11,7 @@
   margin: 0;
   height: auto;
   width: 100vw;
+  background-blend-mode: lighten;
   max-width: 300px;
   animation: slide 1s linear infinite alternate;
 }
@@ -26,8 +27,9 @@
 }
 
 .homeSection {
-  background: linear-gradient(to bottom, whiteSmoke, wheat);
-  height: auto;
+  background: linear-gradient(to bottom, rgb(3, 62, 7), rgb(9, 79, 6));
+  height: 100vh;
+  overflow: hidden;
   padding: 10%;
   width: 100%;
   display: flex;

@@ -15,7 +15,6 @@ export default function Admin({ adminName, adminPhoto, adminId }) {
         .collection("friend")
         .where("friendId", "==", adminId)
         .get();
-      const docId = snapshot.docs[0].id;
       setAdminData(snapshot.docs[0].data());
     };
 
@@ -47,7 +46,7 @@ export default function Admin({ adminName, adminPhoto, adminId }) {
     <React.Fragment>
       <div className={styles.box}>
         <img
-          src={adminPhoto}
+          src="https://pluspng.com/img-png/user-png-icon-young-user-icon-2400.png"
           alt="."
           style={{ width: "75px", borderRadius: "1rem" }}
         />

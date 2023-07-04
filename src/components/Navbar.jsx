@@ -29,7 +29,7 @@ export default function Navbar({
       <div className="container-fluid">
         <div className="d-flex flex-grow justify-content-center">
           <img
-            src={friendPhoto}
+            src="https://pluspng.com/img-png/user-png-icon-young-user-icon-2400.png"
             alt="."
             style={{ borderRadius: "50%", width: "75px" }}
           />

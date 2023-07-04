@@ -99,7 +99,7 @@ export default function FriendChatBox() {
       <Navbar
         friendName={friendData.friendId}
         backColor={friendData.backColor}
-        friendPhoto={friendData.friendPhoto}
+        friendPhoto="https://pluspng.com/img-png/user-png-icon-young-user-icon-2400.png"
         conversation={conversationData.conversation}
       />
       <Conversation

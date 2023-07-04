@@ -1,20 +1,20 @@
 .main {
   width: 100vw;
   height: 100vh;
-  background-color: wheat;
+  background-color: rgb(24, 199, 24);
 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 2px solid brown;
+  border: 2px solid rgb(5, 41, 2);
 }
 
 .section {
   width: 94vw;
   height: 94vh;
-  box-shadow: 0 0 10px #444;
-  background-color: linen;
+  box-shadow: 0 0 10px #03960c;
+  background-color: rgb(5, 41, 2);
   border-radius: 1rem;
 
   display: flex;
@@ -27,7 +27,7 @@
   height: 100%;
   width: 30%;
   padding: 10px;
-  background-color: beige;
+  background-color: rgb(17, 146, 43);
   overflow-y: scroll;
   overflow-x: hidden;
   border-radius: 1rem;

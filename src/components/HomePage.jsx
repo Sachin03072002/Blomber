@@ -7,7 +7,6 @@ import "firebase/firestore";
 function HomePage() {
   const navigate = useNavigate();
   const [userId, setUserId] = useState("");
-  const [toggleMe, setToggleMe] = useState(true);
   async function onSubmitHandler(event) {
     event.preventDefault();
     const snapshot = await firebase
@@ -48,15 +47,13 @@ function HomePage() {
     <React.Fragment>
       <main className={styles.homeMain}>
         <section className={styles.homeSection}>
-          <img src="" alt="friends" className={styles.homeImg} />
+          <img
+            src="https://tobidigital.com/wp-content/uploads/2020/05/whatsapp-business-api-logo-icon.png"
+            alt="friends"
+            className={styles.homeImg}
+          />
           <form className={styles.homeForm} onSubmit={onSubmitHandler}>
-            <small>
-              <i>"when i was growing up, i didn't have a normal</i>
-              <br />
-              <strong>
-                <i>- Phoebe</i>
-              </strong>
-            </small>
+            <h1>Welcome to Bloooomber!!!!</h1>
             <input
               type="text"
               onChange={(e) => {
@@ -69,7 +66,7 @@ function HomePage() {
               required
             />
             <div className="d-flex justify-content-between w-100">
-              <button className="btn btn-outline-dark" type="submit">
+              <button className="btn btn-outline-success" type="submit">
                 My Friends
               </button>
               <button
@@ -81,27 +78,6 @@ function HomePage() {
               >
                 Clear
               </button>
-            </div>
-            <div className="w-100 text-center">
-              <button
-                onClick={() => {
-                  setToggleMe((preVal) => {
-                    return !preVal;
-                  });
-                }}
-                type="button"
-                className="btn btn-primary my-3"
-                style={{ fontWeight: "bold" }}
-              >
-                ?
-              </button>
-              <div
-                className={styles.friendsId}
-                hidden={toggleMe ? true : false}
-              >
-                <p>Friends Ids</p>
-                <small>2Ben | 10Jeo | 12Lily | 19Shally</small>
-              </div>
             </div>
           </form>
         </section>
